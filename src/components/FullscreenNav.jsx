@@ -2,13 +2,14 @@ import { useState } from "react";
 
 function MobileNav({open , setOpen}) {
     return (
+        
         <div className={`absolute top-0 left-0 w-screen bg-white transform ${open ? "-translate-y-0": "-translate-y-full"} transtion-transform duration-300 ease-in-out filter`} >
             <div className="flex flex-col justify-center items-center mt-28">
-                <a className="text-2xl font-bold text-red-500 my-4" href="#">home</a>
-                <a className="text-2xl font-bold hover:text-red-500 my-4" href="#">skills</a>
-                <a className="text-2xl font-bold hover:text-red-500 my-4" href="#">works</a>
-                <a className="text-2xl font-bold hover:text-red-500 my-4" href="#">about me</a>
-                <a className="text-2xl font-bold hover:text-red-500 my-4" href="#">contact</a>
+                <a className="text-2xl font-bold text-red-500 my-4 pl-2" href="#home">home</a>
+                <a className="text-2xl font-bold hover:text-red-500 my-4" href="#skills">skills</a>
+                <a className="text-2xl font-bold hover:text-red-500 my-4" href="#works">works</a>
+                <a className="text-2xl font-bold hover:text-red-500 my-4" href="#about">about me</a>
+                <a className="text-2xl font-bold hover:text-red-500 my-4" href="#contact">contact</a>
             </div>
         </div>
     )

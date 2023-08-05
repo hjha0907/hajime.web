@@ -1,3 +1,44 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+.slick-slider {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+  }
+  .slick-list {
+    position: relative;
+    display: block !important;
+    overflow: hidden;
+    padding: 100px !important;
+    width: 100%;
+  }
+  .slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+  }
+  .slick-slide div {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .slick-slide .image {
+    object-fit: cover;
+    border-radius: 2px;
+    min-width: 100px !important;
+    justify-content: space-around;
+    width: 80%;
+  }
