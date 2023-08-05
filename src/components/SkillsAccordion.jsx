@@ -6,7 +6,7 @@ import {Accordion, AccordionBody, AccordionHeader, AccordionItem} from "react-he
         <> 
         <div id='skills' className='bg-logoidea bg-top bg-fixed h-24'/>
 
-          <Accordion className="w-[65%] sm:w-[55%] mx-auto bg-gray-100 mt-12 pt-2 pb-10 px-7 rounded-xl">
+          <Accordion className="w-[90%] sm:w-[55%] mx-auto bg-gray-100 mt-12 pt-2 pb-10 px-7 rounded-xl">
           <p className='my-8 text-center text-2xl font-bold'><i class="fa-solid fa-pencil"></i> Skills</p>
             <AccordionItem className="">
                 <AccordionHeader className="w-full">
