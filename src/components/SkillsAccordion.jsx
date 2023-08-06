@@ -4,8 +4,7 @@ import {Accordion, AccordionBody, AccordionHeader, AccordionItem} from "react-he
   const SkillsAccordion = () => {
       return (
         <> 
-        <div id='skills' className='bg-logoidea bg-top bg-fixed h-24'/>
-
+        <div id="skills" />
           <Accordion className="w-[90%] sm:w-[55%] mx-auto bg-gray-100 mt-12 pt-2 pb-10 px-7 rounded-xl">
           <p className='my-8 text-center text-2xl font-bold'><i class="fa-solid fa-pencil"></i> Skills</p>
             <AccordionItem className="">
@@ -20,7 +19,7 @@ import {Accordion, AccordionBody, AccordionHeader, AccordionItem} from "react-he
 
                 <AccordionBody>
                     <div className="accordion-body">
-                    <div className="w-[50%] mx-auto">
+                    <div className="w-[80%] mx-auto">
                         <p className="pt-4">Illustrater<h2 className="text-xs text-right text-gray-600">80%</h2></p><div className="bg-gray-200 rounded-full h-2"><div className="bg-blue-600 h-2 rounded-full w-[80%]"></div></div>
                         <p className="pt-4">Photoshop<h2 className="text-xs text-right text-gray-600">80%</h2></p><div className="bg-gray-200 rounded-full h-2"><div className="bg-blue-600 h-2 rounded-full w-[80%]"></div></div>
                         <p className="pt-4">Figma<h2 className="text-xs text-right text-gray-600">50%</h2></p><div className="bg-gray-200 rounded-full h-2"><div className="bg-blue-600 h-2 rounded-full w-[50%]"></div></div>
