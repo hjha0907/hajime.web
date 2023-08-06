@@ -5,8 +5,8 @@ export default {
     extend: {
     },
     backgroundImage :{
-      "logoidea": "url('public/img/logoidea.png')",
-      "bgaboutme": "url('public/img/bgaboutme.png')",
+      "logoidea": "url('./public/img/logoidea.png')",
+      "bgaboutme": "url('./public/img/bgaboutme.png')",
 
     }
   },
