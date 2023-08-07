@@ -6,8 +6,8 @@ export default {
     },
 
     backgroundImage :{      
-      "bgaboutme": "url('img/bgaboutme.png')",
-      "bglogoidea": "url('img/logoidea.png')",
+      "bgaboutme": "url('../img/bgaboutme.png')",
+      "bglogoidea": "url('../img/logoidea.png')",
 
     },
 
