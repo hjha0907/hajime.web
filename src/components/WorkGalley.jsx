@@ -7,35 +7,35 @@ const images=[
       title: "Shinya Ramen",
       category: "Design",
       category: "Coding",
-      img: '../../public/gallery/web-work-001.png',
+      img: 'gallery/web-work-001.png',
       desc:"Design and Coding"
   },
   {
       id: 2,
       title: "Wedding hall in Japan",
       category: "Design",
-      img: '../../public/gallery/web-work-002.png',
+      img: 'gallery/web-work-002.png',
       desc:"Web Design"
   },
   {
     id: 3,
     title: "Family Photoshoot",
     category: "Photo",
-    img: '../../public/gallery/photo-work-001.jpg',
+    img: 'gallery/photo-work-001.jpg',
     desc:"Web Design"
 },
 {
   id: 4,
   title: "Fashion Photoshoot",
   category: "Photo",
-  img: '../../public/gallery/photo-work-002.jpg',
+  img: 'gallery/photo-work-002.jpg',
   desc:"Web Design"
 },
 {
 id: 5,
 title: "Engage Photoshoot",
 category: "Photo",
-img: '../../public/gallery/photo-work-003.jpg',
+img: 'gallery/photo-work-003.jpg',
 desc:"Web Design"
 },
 ]
@@ -50,13 +50,6 @@ const WorkGalley = () => {
     },
     [category]
     );
-
-    const [model, setModel] = useState(false);
-    const [tempimg, setTempImg] = useState('');
-    const getImg =(img) =>{
-      setTempImg(img);
-      setModel(true);
-    }
 
   return (
     <>
@@ -73,7 +66,7 @@ const WorkGalley = () => {
 
 
         
-        <div className=' max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3'>
+        <div className='max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3'>
             {filteredImages.map(image => 
             <div className=''>
                 <div className='w-[150px]  h-[260px] sm:w-[250px]  sm:h-[360px] bg-white rounded-xl mt-10 mx-auto' 
@@ -82,7 +75,6 @@ const WorkGalley = () => {
                   <p className='text-left pl-4 mt-3'>{image.title}</p>
                 </div>
             </div>
-
             )}
         </div>
 

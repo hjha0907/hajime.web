@@ -6,7 +6,9 @@ export default {
     },
 
     backgroundImage :{      
-      "bgaboutme": "url('../../public/img/bgaboutme.png')",
+      "bgaboutme": "url('img/bgaboutme.png')",
+      "bglogoidea": "url('img/logoidea.png')",
+
     },
 
     screens: {

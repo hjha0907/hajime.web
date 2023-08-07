@@ -15,7 +15,7 @@ const MainContent = () => {
                 <div className='px-5 py-2 inline-block mt-8 text-1xl border-2 border-black rounded-xl'>scroll <img className=' animate-bounce w-5 h-5 ml-2 mt-2' src='../../img/ArrowDown.svg' /></div>
             </div>
             <div className="">
-            <img className='w-[100%] h-28 object-cover' src={logoidea} />
+            <div className='bg-bglogoidea bg-fixed bg-top w-[100%] h-28 object-cover'></div>
             </div>
         </div>
 </>
