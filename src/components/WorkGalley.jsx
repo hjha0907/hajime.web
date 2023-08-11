@@ -8,7 +8,7 @@ const images=[
       title: "Shinya Ramen",
       category: "Coding",
       img: 'gallery/web-work-001-s.png',
-      link: 'gallery/web-work-001-s.png',
+      link: 'gallery/web-work-001.png',
       desc:"Design and Coding"
   },
   {
@@ -16,7 +16,7 @@ const images=[
       title: "Wedding hall in Japan",
       category: "Design",
       img: 'gallery/web-work-002-s.png',
-      link: 'gallery/web-work-001-s.png',
+      link: 'gallery/web-work-001.png',
       desc:"Web Design"
   },
   {
@@ -24,7 +24,7 @@ const images=[
     title: "Family Photoshoot",
     category: "Photo",
     img: 'gallery/photo-work-001-s.jpg',
-    link: 'gallery/web-work-001-s.png',
+    link: 'gallery/web-work-001.png',
     desc:"Web Design"
 },
 {
@@ -32,7 +32,7 @@ const images=[
   title: "Fashion Photoshoot",
   category: "Photo",
   img: 'gallery/photo-work-002-s.jpg',
-  link: 'gallery/web-work-001-s.png',
+  link: 'gallery/web-work-001.png',
   desc:"Web Design"
 },
 {
@@ -40,7 +40,7 @@ id: 5,
 title: "Engagement Photoshoot",
 category: "Photo",
 img: 'gallery/photo-work-003-s.jpg',
-link: 'gallery/web-work-001-s.png',
+link: 'gallery/web-work-001.png',
 desc:"Web Design"
 },
 ]
