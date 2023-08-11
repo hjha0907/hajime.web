@@ -1,41 +1,46 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
+import { Modal, ModalContent } from './ModalImg.jsx';
 
 const images=[
   {
       id: 1,
       title: "Shinya Ramen",
-      category: "Design",
       category: "Coding",
-      img: 'gallery/web-work-001.png',
+      img: 'gallery/web-work-001-s.png',
+      link: 'gallery/web-work-001-s.png',
       desc:"Design and Coding"
   },
   {
       id: 2,
       title: "Wedding hall in Japan",
       category: "Design",
-      img: 'gallery/web-work-002.png',
+      img: 'gallery/web-work-002-s.png',
+      link: 'gallery/web-work-001-s.png',
       desc:"Web Design"
   },
   {
     id: 3,
     title: "Family Photoshoot",
     category: "Photo",
-    img: 'gallery/photo-work-001.jpg',
+    img: 'gallery/photo-work-001-s.jpg',
+    link: 'gallery/web-work-001-s.png',
     desc:"Web Design"
 },
 {
   id: 4,
   title: "Fashion Photoshoot",
   category: "Photo",
-  img: 'gallery/photo-work-002.jpg',
+  img: 'gallery/photo-work-002-s.jpg',
+  link: 'gallery/web-work-001-s.png',
   desc:"Web Design"
 },
 {
 id: 5,
-title: "Engage Photoshoot",
+title: "Engagement Photoshoot",
 category: "Photo",
-img: 'gallery/photo-work-003.jpg',
+img: 'gallery/photo-work-003-s.jpg',
+link: 'gallery/web-work-001-s.png',
 desc:"Web Design"
 },
 ]
@@ -51,7 +56,8 @@ const WorkGalley = () => {
     [category]
     );
 
-  return (
+
+    return (
     <>
 
       <img className='mt-2 w-full' src='./img/bgLine.png' />
@@ -69,11 +75,14 @@ const WorkGalley = () => {
         <div className='max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3'>
             {filteredImages.map(image => 
             <div className=''>
-                <div className='w-[150px]  h-[260px] sm:w-[250px]  sm:h-[360px] bg-white rounded-xl mt-10 mx-auto' 
+                <div className='w-[80%]  h-[260px] sm:w-[250px]  sm:h-[360px] bg-white rounded-xl mt-10 mx-auto' 
                   key={image.id}>
-                  <img className='w-[150px] h-[200px] sm:w-[250px] sm:h-[300px] object-cover rounded-t-xl object-top' src={image.img} />
-                  <p className='text-left pl-4 mt-3'>{image.title}</p>
+                    <a href={image.img}>
+                  <img className='w-[100%] h-[200px] sm:w-[250px] sm:h-[300px] object-cover rounded-t-xl object-center mx-auto' src={image.img}/>     
+                  </a>             
+                  <p className='text-left pl-4 mt-3 leading-tight'>{image.title}</p>
                 </div>
+
             </div>
             )}
         </div>
@@ -94,5 +103,4 @@ const TagButton = ({name,handleSetCategory}) => {
     </div>
   </button>)  
 };
-
 export default WorkGalley;
