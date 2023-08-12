@@ -8,10 +8,10 @@ import {Accordion, AccordionBody, AccordionHeader, AccordionItem} from "react-he
           <Accordion className="w-[80%] max-w-2xl mx-auto mt-12 pt-2 pb-10 px-7">
           <p className='my-8 text-center text-2xl font-bold'><i class="fa-solid fa-pencil"></i> Skills</p>
             <AccordionItem className="">
-                <AccordionHeader className="w-full">
+                <AccordionHeader className="pt-6 w-full reveal">
                     <h1 className={`accordion-title`}>
-                    <div className="text-2xl py-2 rounded-xl space-x-8 border-b-2 drop-shadow-md">
-                        <i class="fa-solid fa-layer-group"></i> Web Design <i class="fa-solid fa-chevron-down"></i>
+                    <div className="text-2xl py-2 rounded-xl space-x-8 border-b-2 drop-shadow-md transform transition duration-500 hover:scale-110">
+                        <i class="fa-solid fa-layer-group"></i> WebDesign <i class="fa-solid fa-chevron-down"></i>
                         <p className="text-[0.65rem] text-gray-700 font-bold pr-8">ウェブデザインで使用するソフト</p>
                     </div>
                     </h1>
@@ -29,9 +29,9 @@ import {Accordion, AccordionBody, AccordionHeader, AccordionItem} from "react-he
             </AccordionItem>
 
             <AccordionItem className="">
-            <AccordionHeader className="pt-6 w-full">
+            <AccordionHeader className="pt-6 w-full reveal">
                     <h1 className={`accordion-title`}>
-                    <div className="text-2xl py-2 rounded-xl space-x-8 border-b-2 drop-shadow-md">
+                    <div className="text-2xl py-2 rounded-xl space-x-8 border-b-2 drop-shadow-md transform transition duration-500 hover:scale-110">
                     <i class="fa-solid fa-code"></i> Coding <i class="fa-solid fa-chevron-down"></i>
                     <p className=" text-[0.65rem] text-gray-700 font-bold pr-8">コーディングで使用するソフト</p>
                     </div>
@@ -52,9 +52,9 @@ import {Accordion, AccordionBody, AccordionHeader, AccordionItem} from "react-he
             </AccordionItem>
 
             <AccordionItem className="">
-            <AccordionHeader className="pt-7 w-full">
+            <AccordionHeader className="pt-7 w-full reveal">
                     <h1 className={`accordion-title`}>
-                    <div className="text-2xl py-2 rounded-xl space-x-8 border-b-2 drop-shadow-md">
+                    <div className="text-2xl py-2 rounded-xl space-x-8 border-b-2 drop-shadow-md transform transition duration-500 hover:scale-110">
                     <i class="fa-solid fa-camera-retro"></i> Photograph <i class="fa-solid fa-chevron-down"></i>
                     <p className=" text-[0.65rem] text-gray-700 font-bold pr-8">フォトグラフで使用するソフト</p>
                     </div>
@@ -73,10 +73,10 @@ import {Accordion, AccordionBody, AccordionHeader, AccordionItem} from "react-he
             </AccordionItem>
 
             <AccordionItem className="">
-            <AccordionHeader className="pt-7 w-full ">
+            <AccordionHeader className="pt-7 w-full reveal">
                     <h1 className={`accordion-title`}>
-                    <div className="text-2xl py-2 rounded-xl space-x-8 border-b-2 drop-shadow-md">
-                    <i class="fa-solid fa-video"></i> Videograph <i class="fa-solid fa-chevron-down"></i>
+                    <div className="text-2xl py-2 rounded-xl space-x-8 border-b-2 drop-shadow-md transform transition duration-500 hover:scale-110">
+                    <i class="fa-solid fa-video"></i> Video <i class="fa-solid fa-chevron-down"></i>
                     <p className=" text-[0.65rem] text-gray-700 font-bold pr-8">映像制作で使用するソフト</p>
                     </div>
                     </h1>
@@ -93,9 +93,9 @@ import {Accordion, AccordionBody, AccordionHeader, AccordionItem} from "react-he
             </AccordionItem>
 
             <AccordionItem className="">
-            <AccordionHeader className="pt-7 w-full">
+            <AccordionHeader className="pt-7 w-full reveal">
                     <h1 className={`accordion-title`}>
-                    <div className="text-2xl py-2 rounded-xl space-x-8 border-b-2 drop-shadow-md">
+                    <div className="text-2xl py-2 rounded-xl space-x-8 border-b-2 drop-shadow-md transform transition duration-500 hover:scale-110">
                     <i class="fa-solid fa-pen-nib"></i> Illustration <i class="fa-solid fa-chevron-down"></i>
                     <p className=" text-[0.65rem] text-gray-700 font-bold pr-8">イラスト制作で使用するソフト</p>
                     </div>

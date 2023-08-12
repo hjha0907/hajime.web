@@ -1,47 +1,46 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import { Modal, ModalContent } from './ModalImg.jsx';
 
 const images=[
   {
       id: 1,
-      title: "Shinya Ramen",
+      title: "Design and Coding",
       category: "Coding",
       img: 'gallery/web-work-001-s.png',
-      link: 'gallery/web-work-001.png',
-      desc:"Design and Coding"
+      link: 'https://shinyaramen.com.au/',
+      desc:"Design and Coding for Shinya ramen in Geelong"
   },
   {
       id: 2,
-      title: "Wedding hall in Japan",
+      title: "Web Design",
       category: "Design",
       img: 'gallery/web-work-002-s.png',
-      link: 'gallery/web-work-001.png',
-      desc:"Web Design"
+      link: 'gallery/web-work-002.png',
+      desc:"Web Design for wedding hall in Japan"
   },
   {
     id: 3,
-    title: "Family Photoshoot",
+    title: "Photo",
     category: "Photo",
     img: 'gallery/photo-work-001-s.jpg',
-    link: 'gallery/web-work-001.png',
-    desc:"Web Design"
+    link: 'gallery/photo-work-001.jpg',
+    desc:"Family Photoshoot in Victoria market"
 },
 {
   id: 4,
-  title: "Fashion Photoshoot",
+  title: "Photo",
   category: "Photo",
   img: 'gallery/photo-work-002-s.jpg',
-  link: 'gallery/web-work-001.png',
-  desc:"Web Design"
+  link: 'gallery/photo-work-002.jpg',
+  desc:"Fashion Photoshoot in Melborune CBD"
 },
 {
 id: 5,
-title: "Engagement Photoshoot",
+title: "Photo",
 category: "Photo",
 img: 'gallery/photo-work-003-s.jpg',
-link: 'gallery/web-work-001.png',
-desc:"Web Design"
+link: 'gallery/photo-work-003.jpg',
+desc:"Engagement Photoshoot in Victoria Garden"
 },
 ]
 
@@ -74,15 +73,14 @@ const WorkGalley = () => {
         
         <div className='max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3'>
             {filteredImages.map(image => 
-            <div className=''>
-                <div className='w-[80%]  h-[260px] sm:w-[250px]  sm:h-[360px] bg-white rounded-xl mt-10 mx-auto' 
-                  key={image.id}>
-                    <a href={image.img}>
-                  <img className='w-[100%] h-[200px] sm:w-[250px] sm:h-[300px] object-cover rounded-t-xl object-center mx-auto' src={image.img}/>     
+            <div className='reveal'>
+                <div className='w-[80%] h-[300px] sm:w-[250px] sm:h-[360px] bg-white rounded-xl mt-10 mx-auto overflow-hidden drop-shadow-lg'  key={image.id}>
+                  <a href={image.link} target='blank'>
+                    <img className='w-[100%] h-[200px] sm:w-[250px] sm:h-[250px] object-cover rounded-t-xl object-center mx-auto transform transition duration-500 hover:scale-110' src={image.img}/>     
                   </a>             
-                  <p className='text-left pl-4 mt-3 leading-tight'>{image.title}</p>
+                  <p className='text-left px-4 mt-4 leading-tight'>{image.desc}</p>
+                  <p className='text-left pl-4 mt-3 leading-tight text-white text-xs'><span className='bg-slate-500 p-1 rounded-md'>{image.title}</span></p>
                 </div>
-
             </div>
             )}
         </div>
@@ -98,9 +96,11 @@ const WorkGalley = () => {
 const TagButton = ({name,handleSetCategory}) => {
   return (
   <button onClick={()=>handleSetCategory(name)}>
-    <div className=' bg-gray-400 ml-3 py-1 px-2 rounded-md text-xs hover:bg-black hover:text-white'>
+    <div className=' bg-slate-500 ml-3 py-1 px-2 rounded-md text-xs hover:bg-black text-white transform transition duration-500 hover:scale-110'>
         {name.toUpperCase()}
     </div>
   </button>)  
 };
+
+
 export default WorkGalley;
