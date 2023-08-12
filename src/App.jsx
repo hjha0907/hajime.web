@@ -8,11 +8,13 @@ import Experience from './components/Experience';
 import AboutMe from'./components/AboutMe';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import LoadingScreen from './components/LoadingScreen';
 
 
 function App() {
   return ( 
     <>
+    <LoadingScreen/>
     <Header />
     <MainContent/>
     <SkillsAccordion />
