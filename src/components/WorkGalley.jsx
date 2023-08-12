@@ -8,7 +8,7 @@ const images=[
       category: "Coding",
       img: 'gallery/web-work-001-s.png',
       link: 'https://shinyaramen.com.au/',
-      desc:"Design and Coding for Shinya ramen in Geelong"
+      desc:"Design and Coding for Shinya Ramen in Geelong"
   },
   {
       id: 2,
@@ -24,7 +24,7 @@ const images=[
     category: "Photo",
     img: 'gallery/photo-work-001-s.jpg',
     link: 'gallery/photo-work-001.jpg',
-    desc:"Family Photoshoot in Victoria market"
+    desc:"Family Photoshoot in Victoria Markets"
 },
 {
   id: 4,
@@ -32,7 +32,7 @@ const images=[
   category: "Photo",
   img: 'gallery/photo-work-002-s.jpg',
   link: 'gallery/photo-work-002.jpg',
-  desc:"Fashion Photoshoot in Melborune CBD"
+  desc:"Fashion Photoshoot in Melbourne CBD"
 },
 {
 id: 5,
@@ -40,7 +40,7 @@ title: "Photo",
 category: "Photo",
 img: 'gallery/photo-work-003-s.jpg',
 link: 'gallery/photo-work-003.jpg',
-desc:"Engagement Photoshoot in Victoria Garden"
+desc:"Engagement Photoshoot in Royal Botanical Gardens"
 },
 ]
 
