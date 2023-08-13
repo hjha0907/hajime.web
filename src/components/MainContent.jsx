@@ -31,7 +31,7 @@ const MainContent = () => {
                       />
                      </h1>
                     <p className=' text-2xl'>Melbourne, Australia</p>
-                    <p className=' text-2xl'>Welcome & thank you for Visiting my website</p>
+                    <p className=' text-2xl'>Welcome & thank you for visiting my website</p>
                     <div className='px-5 py-2 inline-block mt-8 text-1xl border-2 border-black rounded-xl'>scroll <img className=' animate-bounce w-5 h-5 ml-2 mt-2' src='../../img/ArrowDown.svg' /></div>
             </div>
             <div className="">
