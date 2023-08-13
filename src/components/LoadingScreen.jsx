@@ -25,6 +25,6 @@ const LoadingScreen = () => {
     setTimeout(() => {
       const loadingEl = document.getElementById("loading");
       loadingEl.classList.add("loaded");
-    }, 2000);
+    }, 3000);
   });
 export default LoadingScreen
