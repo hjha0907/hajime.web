@@ -3,7 +3,7 @@ import React from 'react'
 
 const LoadingScreen = () => {
   return (
-<div  id="loading">
+<div  id="loading"><div className='spinner'>
     <div class="sk-cube-grid">
     <div class="sk-cube sk-cube1"></div>
     <div class="sk-cube sk-cube2"></div>
@@ -16,11 +16,15 @@ const LoadingScreen = () => {
     <div class="sk-cube sk-cube9"></div>
     </div>
 </div>
+</div>
   )
 }
-window.onload = function() {
-    const spinner = document.getElementById('loading');
-    spinner.classList.add('loaded');
-  }
 
+
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      const loadingEl = document.getElementById("loading");
+      loadingEl.classList.add("loaded");
+    }, 2000);
+  });
 export default LoadingScreen
