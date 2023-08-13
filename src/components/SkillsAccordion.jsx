@@ -20,7 +20,7 @@ import {Accordion, AccordionBody, AccordionHeader, AccordionItem} from "react-he
                 <AccordionBody>
                     <div className="accordion-body">
                     <div className="w-[80%] mx-auto">
-                        <p className="pt-4">Illustrater<h2 className="text-xs text-right text-gray-600">80%</h2></p><div className="bg-gray-200 rounded-full h-2"><div className="bg-blue-600 h-2 rounded-full w-[80%]"></div></div>
+                        <p className="pt-4">Illustrator<h2 className="text-xs text-right text-gray-600">80%</h2></p><div className="bg-gray-200 rounded-full h-2"><div className="bg-blue-600 h-2 rounded-full w-[80%]"></div></div>
                         <p className="pt-4">Photoshop<h2 className="text-xs text-right text-gray-600">80%</h2></p><div className="bg-gray-200 rounded-full h-2"><div className="bg-blue-600 h-2 rounded-full w-[80%]"></div></div>
                         <p className="pt-4">Figma<h2 className="text-xs text-right text-gray-600">50%</h2></p><div className="bg-gray-200 rounded-full h-2"><div className="bg-blue-600 h-2 rounded-full w-[50%]"></div></div>
                     </div>
